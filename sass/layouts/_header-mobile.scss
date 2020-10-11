@@ -26,14 +26,18 @@
 }
 
 .button-mobile .icon-cross {
-  display: none;
-}
-
-.button-mobile.is-open .icon-cross {
   display: block;
 }
 
+.button-mobile.is-open .icon-cross {
+  display: none;
+}
+
 .button-mobile.is-open .icon-menu {
+  display: block;
+}
+
+.button-mobile .icon-menu {
   display: none;
 }
 

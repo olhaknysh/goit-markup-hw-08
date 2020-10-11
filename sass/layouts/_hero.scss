@@ -17,18 +17,6 @@
   max-width: 480px;
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/mobile/hero_mob/Header-img@2x.jpg);
-  }
-}
-
 @media screen and (min-width: $tablet) {
   .hero {
     max-width: 768px;
@@ -37,19 +25,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/tablet/banner-tab.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-width: $tablet) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/tablet/banner-tab@2x.jpg);
   }
 }
 
@@ -65,10 +40,9 @@
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-width: $desktop) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -78,12 +52,41 @@
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet) and (max-width: $desktop),
+  screen and (min-resolution: 192dpi) and (min-width: $tablet) and (max-width: $desktop),
+  screen and (min-resolution: 2dppx) and (min-width: $tablet) and (max-width: $desktop) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/tablet/banner-tab@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
+  screen and (min-resolution: 192dpi) and (max-width: 768px),
+  screen and (min-resolution: 2dppx) and (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/mobile/hero_mob/Header-img@2x.jpg);
+  }
+}
+
 .hero__section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   max-width: 696px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
