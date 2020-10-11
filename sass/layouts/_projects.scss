@@ -1,0 +1,121 @@
+.projects {
+  flex-wrap: wrap;
+}
+
+.projects__item {
+  border: 1px solid #eeeeee;
+  transition: box-shadow $animation;
+
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .projects__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .projects__item:last-child {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop) {
+  .projects__item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .projects__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+
+  .projects__item:nth-child(-n + 8) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .projects__item {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+
+  .projects__item:not(:nth-of-type(3n)) {
+    margin-right: 30px;
+  }
+
+  .projects > .projects__item:nth-of-type(-n + 6) {
+    margin-bottom: 30px;
+  }
+}
+
+.projects__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__overlay {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $accent-color;
+  transform: translateY(100%);
+  transition: transform $animation;
+}
+
+.projects__overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform $animation;
+
+  font-size: 18px;
+  line-height: 1.56;
+  margin: 0;
+  width: 322px;
+  color: $background-color;
+}
+
+.projects__item:hover .projects__overlay {
+  transform: translateY(0);
+}
+
+.projects__item:hover .projects__overlay-text {
+  transform: translate(-50%, -50%);
+}
+
+.projects__text-container {
+  padding: 20px 24px;
+}
+
+.projects__text-container-title {
+  margin-top: 0px;
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: $title-text-color;
+}
+
+.projects__text-container-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: $primary-text-color;
+}

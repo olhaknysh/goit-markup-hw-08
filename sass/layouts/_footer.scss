@@ -1,0 +1,85 @@
+.footer {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: baseline;
+
+  background-color: $background-hero-color;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.footer__address {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 230px;
+    margin-right: 70px;
+  }
+}
+
+.footer__address-title {
+  margin-top: 0;
+  font-family: $font-logo;
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: $background-color;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}
+
+.footer__address-text {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  &--white {
+    display: block;
+    color: $background-color;
+    margin-bottom: 10px;
+  }
+
+  &--margin {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .footer__address-text {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .footer__address-text {
+    text-align: left;
+    width: 231px;
+  }
+}
+
+.container.footer {
+  padding: 0px;
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

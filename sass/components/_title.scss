@@ -1,0 +1,16 @@
+.title {
+  color: $title-text-color;
+}
+
+.title-section {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
+}

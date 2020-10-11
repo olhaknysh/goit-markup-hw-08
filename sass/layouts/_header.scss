@@ -1,0 +1,17 @@
+.header {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__nav {
+  align-items: baseline;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-right: 88px;
+}

@@ -1,0 +1,47 @@
+.clients {
+  display: flex;
+  justify-content: center;
+  margin: -15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $desktop) {
+    flex-wrap: wrap;
+  }
+}
+
+.clients__item {
+  margin: 15px;
+}
+
+.clients__link {
+  display: flex;
+
+  height: 90px;
+  width: 170px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+
+  transition: border-color $animation;
+
+  &:hover {
+    border-color: $accent-color;
+  }
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.clients__icon {
+  fill: $icon-color;
+
+  transition: fill $animation;
+}
+
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
+  fill: $accent-color;
+}

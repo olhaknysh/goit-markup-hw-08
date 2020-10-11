@@ -1,0 +1,46 @@
+.nav__list {
+  align-items: center;
+}
+
+.nav__list-item {
+  position: relative;
+  padding-bottom: 8px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .nav__list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .nav__list-item:first-child {
+    width: 61px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .nav__list > .nav__list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav__link {
+  color: $title-text-color;
+  transition: color $animation;
+
+  &:hover {
+    color: $accent-color;
+  }
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.current {
+  color: $accent-color;
+}

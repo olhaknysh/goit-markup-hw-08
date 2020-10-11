@@ -1,0 +1,97 @@
+.follow {
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 450px;
+    margin-top: 60px;
+  }
+}
+
+.follow__label {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 20px;
+
+  color: $background-color;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.follow__email {
+  display: block;
+  max-width: 450px;
+  height: 50px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $background-hero-color;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (min-width: $mobile) {
+  .follow__email {
+    width: 450px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .follow__email {
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
+.follow__button {
+  position: relative;
+  display: block;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  color: $background-color;
+
+  background-color: $accent-color;
+  background-image: url(../images/icons/forms/iconsend.svg);
+  background-repeat: no-repeat;
+  background-position: right 28px top 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.follow__button > .follow__button-text {
+  position: absolute;
+  left: 29px;
+  top: 50%;
+  transform: translateY(-50%);
+}
