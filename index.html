@@ -37,8 +37,7 @@
               class="header__address-link link"
               href="mailto:info@devstudio.com"
             >
-              <svg class="header__address-icon" width="16" height="16"
-              >
+              <svg class="header__address-icon" width="16" height="16">
                 <use
                   href="./images/icons/symbol-defs.svg#icon-envelope"
                 ></use></svg
@@ -55,22 +54,36 @@
         </div>
       </div>
 
-          <nav class="nav-mobile flexbox">
-            <div class="nav-mobile__top">
-            <a class="header__logo link" href="./index.html"
-              ><span class="web">Web</span>Studio</a
+      <nav class="nav-mobile flexbox">
+        <div class="nav-mobile__top">
+          <a class="header__logo link" href="./index.html"
+            ><span class="web">Web</span>Studio</a
+          >
+          <button
+            class="button-mobile is-open"
+            data-menu-button
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
             >
-            <button class="button-mobile is-open" data-menu-button type="button"
-            aria-expanded="false" 
-            aria-controls="menu-container">
-              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu"></use>
-                <use class="icon-cross" href="./images/icons/symbol-defs.svg#icon-close-menu"></use>
-              </svg>
-            </button>
-          </div>
-            <div class="menu-container" id="menu-container" data-menu>
-              <div class="menu-list">
+              <use
+                class="icon-menu"
+                href="./images/icons/symbol-defs.svg#icon-menu"
+              ></use>
+              <use
+                class="icon-cross"
+                href="./images/icons/symbol-defs.svg#icon-close-menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container" id="menu-container" data-menu>
+          <div class="menu-list">
             <ul class="nav__list flexbox list">
               <li class="nav__list-item">
                 <a class="nav__link link current" href="./index.html">Студия</a>
@@ -82,8 +95,8 @@
                 <a class="nav__link link" href="#contacts">Контакты</a>
               </li>
             </ul>
-            </div>
-            <div class="menu-address">
+          </div>
+          <div class="menu-address">
             <address class="header__address flexbox">
               <a
                 class="header__address-link link"
@@ -102,10 +115,10 @@
                   ></use></svg
                 >+38 096 111 11 11</a
               >
-              </div>
             </address>
-            </div>
-          </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <article>
@@ -162,16 +175,21 @@
               <li class="company">
                 <a class="link" href="">
                   <picture>
-                    <source srcset="./images/img.jpg 1x ,./images/Desktop/desktop-box1@2x.jpg.jpg 2x"> 
-                      <img
-                    class="image"
-                    src="./images/img.jpg"
-                    alt="кодирование"
-                    width="370"
-                    height="295"
-                  />
+                    <source
+                      srcset="
+                        ./images/img.jpg                         1x,
+                        ./images/Desktop/desktop-box1@2x.jpg.jpg 2x
+                      "
+                    />
+                    <img
+                      class="image"
+                      src="./images/img.jpg"
+                      alt="кодирование"
+                      width="370"
+                      height="295"
+                    />
                   </picture>
-                   <div class="company__item">
+                  <div class="company__item">
                     <p class="company__text text">Десктопные приложения</p>
                   </div>
                 </a>
@@ -179,9 +197,20 @@
               <li class="company">
                 <a class="link" href="">
                   <picture>
-                    <source srcset="./images/box2.jpg 1x ,./images/Desktop/desktop-box2@2x.jpg.jpg 2x">
-                  <img class="image" src="./images/box2.jpg" alt="создание мобильных приложений" width="370" height="295" />
-                    </picture>
+                    <source
+                      srcset="
+                        ./images/box2.jpg                        1x,
+                        ./images/Desktop/desktop-box2@2x.jpg.jpg 2x
+                      "
+                    />
+                    <img
+                      class="image"
+                      src="./images/box2.jpg"
+                      alt="создание мобильных приложений"
+                      width="370"
+                      height="295"
+                    />
+                  </picture>
                 </a>
                 <div class="company__item">
                   <p class="company__text text">Мобильные приложения</p>
@@ -190,9 +219,20 @@
               <li class="company">
                 <a class="link" href="">
                   <picture>
-                    <source srcset="./images/box3.jpg 1x ,./images/Desktop/desktop-box3@2x.jpg.jpg 2x">
-                      <img class="image" src="./images/box3.jpg" alt="палитра цветов" width="370" height="295" />
-                  </picture>  
+                    <source
+                      srcset="
+                        ./images/box3.jpg                        1x,
+                        ./images/Desktop/desktop-box3@2x.jpg.jpg 2x
+                      "
+                    />
+                    <img
+                      class="image"
+                      src="./images/box3.jpg"
+                      alt="палитра цветов"
+                      width="370"
+                      height="295"
+                    />
+                  </picture>
                 </a>
                 <div class="company__item">
                   <p class="company__text text">Дизайнерские решения</p>
@@ -209,13 +249,28 @@
               <li class="team__item">
                 <a class="link" href="">
                   <picture>
-                    <source srcset="./images/imgteam1.jpg 1x , ./images/Desktop/desktop-team1@2x.jpg.jpg 2x  " media="(min-width:1200px)">
-                    <source srcset="./images/tablet/team_card_1-tab.jpg 1x , ./images/tablet/team_card_1-tab@2x.jpg 2x " media="(min-width:768px">
-                    <source srcset="./images/mobile/comand_mob/igor4mob@1x.jpg 1x, ./images/mobile/comand_mob/igor4mob@2x.jpg 2x" media="(max-width:767px">
-                  <img
-                    class="team__image image"
-                    src="./images/imgteam1.jpg"
-                    alt="Игорь Демьяненко"
+                    <source
+                      srcset="
+                        ./images/imgteam1.jpg                     1x,
+                        ./images/Desktop/desktop-team1@2x.jpg.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./images/tablet/team_card_1-tab.jpg    1x,
+                        ./images/tablet/team_card_1-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./images/mobile/comand_mob/igor4mob@1x.jpg 1x,
+                        ./images/mobile/comand_mob/igor4mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)" />
+                    <img
+                      class="team__image image"
+                      src="./images/imgteam1.jpg"
+                      alt="Игорь Демьяненко"
                   /></picture>
                 </a>
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -270,14 +325,33 @@
               <li class="team__item">
                 <a class="link" href="">
                   <picture>
-                    <source srcset="./images/imgteam2.jpg 1x , ./images/Desktop/desktop-team2@2x.jpg.jpg 2x  " media="(min-width:1200px)">
-                    <source srcset="./images/tablet/team_card_2-tab.jpg 1x , ./images/tablet/team_card_2-tab@2x.jpg 2x "
-                      media="(min-width:768px">
-                    <source srcset="./images/mobile/comand_mob/olga4mob@1x.jpg 1x, ./images/mobile/comand_mob/olga4mob@2x.jpg 2x"
-                      media="(max-width:767px">
-                      <img class="team__image image" src="./images/imgteam2.jpg" alt="Ольга Репина"  />
-                    </picture>
-                  
+                    <source
+                      srcset="
+                        ./images/imgteam2.jpg                     1x,
+                        ./images/Desktop/desktop-team2@2x.jpg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/team_card_2-tab.jpg    1x,
+                        ./images/tablet/team_card_2-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/comand_mob/olga4mob@1x.jpg 1x,
+                        ./images/mobile/comand_mob/olga4mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="team__image image"
+                      src="./images/imgteam2.jpg"
+                      alt="Ольга Репина"
+                    />
+                  </picture>
                 </a>
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text text">Frontend Developer</p>
@@ -331,16 +405,32 @@
               <li class="team__item">
                 <a class="link" href="">
                   <picture>
-                    <source srcset="./images/imgteam3.jpg 1x , ./images/Desktop/desktop-team3@2x.jpg.jpg 2x  " media="(min-width:1200px)">
-                    <source srcset="./images/tablet/team_card_3-tab.jpg 1x , ./images/tablet/team_card_3-tab@2x.jpg 2x "
-                      media="(min-width:768px">
-                    <source srcset="./images/mobile/comand_mob/nikolai4mob@1x.jpg 1x, ./images/mobile/comand_mob/nikolai4mob@2x.jpg 2x"
-                      media="(max-width:767px">
+                    <source
+                      srcset="
+                        ./images/imgteam3.jpg                     1x,
+                        ./images/Desktop/desktop-team3@2x.jpg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/team_card_3-tab.jpg    1x,
+                        ./images/tablet/team_card_3-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/comand_mob/nikolai4mob@1x.jpg 1x,
+                        ./images/mobile/comand_mob/nikolai4mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
                     <img
-                    class="team__image image"
-                    src="./images/imgteam3.jpg"
-                    alt="Николай Тарасов"
-                  />
+                      class="team__image image"
+                      src="./images/imgteam3.jpg"
+                      alt="Николай Тарасов"
+                    />
                   </picture>
                 </a>
                 <h3 class="team__title">Николай Тарасов</h3>
@@ -395,18 +485,33 @@
               <li class="team__item">
                 <a class="link" href="">
                   <picture>
-                    <source srcset="./images/imgteam4.jpg 1x , ./images/Desktop/desktop-team4@2x.jpg.jpg 2x  " media="(min-width:1200px)">
-                    <source srcset="./images/tablet/team_card_4-tab.jpg 1x , ./images/tablet/team_card_4-tab@2x.jpg 2x "
-                      media="(min-width:768px">
-                    <source srcset="./images/mobile/comand_mob/misha4mob@1x.jpg 1x, ./images/mobile/comand_mob/misha4mob@2x.jpg 2x"
-                      media="(max-width:767px">
+                    <source
+                      srcset="
+                        ./images/imgteam4.jpg                     1x,
+                        ./images/Desktop/desktop-team4@2x.jpg.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/team_card_4-tab.jpg    1x,
+                        ./images/tablet/team_card_4-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/comand_mob/misha4mob@1x.jpg 1x,
+                        ./images/mobile/comand_mob/misha4mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
                     <img
-                    class="team__image image"
-                    src="./images/imgteam4.jpg"
-                    alt="Михаил Ермаков"
-                  />
+                      class="team__image image"
+                      src="./images/imgteam4.jpg"
+                      alt="Михаил Ермаков"
+                    />
                   </picture>
-                  
                 </a>
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text text">UI Designer</p>
